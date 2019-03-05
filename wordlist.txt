@@ -80,6 +80,15 @@ acknowledge
 acknowledged
 acm
 acne
+aren't
+shouldn't
+couldn't
+can't
+won't
+weren't
+didn't
+isn't
+wouldn't
 acoustic
 acquire
 acquired
