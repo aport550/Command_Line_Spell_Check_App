@@ -17,7 +17,7 @@ def speller(file):
             
     #add these to dict so they dont come up as mispelled
     endlines = ["\n", "\t", '', "\n\n" , "\n\n\n"]
-    symbols = [".", "...", "?", "!", "-", "_", "+", "=", "(", ")", "[", "]", ";", ":"]
+    symbols = [".", "...", "?", "!", "-", "_", "+", "=", "(", ")", "[", "]", ";", ":", "$", "<", ">", "&", "%", "#", "@", "*"]
 
     for line in endlines:
         dict.append(line)
@@ -58,15 +58,14 @@ def speller(file):
             pass
 
     # Compare our user word list to the dictionary word list and see which words match and are spelled correctly
-    print("\nYour file was checked succesfully! Below is the content of your file with mispelled words indicated by a (Mispelled) added onto them.\n")
+    print("\nYour file was checked succesfully! Below is the content of your file with mispelled words indicated by a (Mispelled) added onto them.\n\n----------------------------------------------------------------------------")
           
     for n in words_list:
         if n in dict:
              print(n + " ", end='')
         else:
             print(n+"(Mispelled) ", end=''), #mispelled words are denoted as having (Mispelled) added after them
-
-    print('\n')
+    print('\n--------------------------------------------------------------------------\n')
     return words_list;
 
 speller(user_file)
